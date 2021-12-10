@@ -1,0 +1,463 @@
+*{
+	box-sizing: border-box;
+}
+
+html, body{
+	width: 100%;
+	/*background-color: #888;*/
+	margin: 0 auto;
+	font-family: 'Intro', sans-serif;
+}
+
+input,
+textarea,
+button{
+	box-sizing: border-box;
+	font-family: 'Intro', sans-serif;
+}
+
+button{
+	cursor: pointer;
+}
+
+.container{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	/*background: url('../img/Artboard3.png') no-repeat center center fixed;*/
+	/*background-size: 60%;*/
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: 10% 90%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	z-index: 3;
+}
+
+.container .lg-pannel img{
+	width: 10%;
+	padding: 10px 0 0 20px;
+	transform: translate(10%,-290%);	
+}
+
+.container .lg-right img{
+	width: 10%;
+	float: right;
+	margin: 10px 40px 0 0;
+	transform: translate(10%,-340%);
+}
+
+.container .cicle-bg{
+	position: absolute;
+	width: 30%;
+	transform: translate(114%, 30%);
+}
+
+.container .txt-po{
+	position: relative;
+	width: 14%;
+	transform: translate(300%, 48%);
+}
+
+.container #btn-gcon{
+	/*position: relative;*/
+	border: none;
+	list-style: none;
+	width: 14%;
+	border-radius: 120px;
+	background-color: transparent;
+	transform: translate(300%, -4%);
+	border-style: none;
+	outline: none;
+	cursor: pointer;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+/* #btn-gcon {
+	letter-spacing: 1.3px;
+	color: #313133;
+	background: #4FD1C5;
+	background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+	border: none;
+	border-radius: 1000px;
+	transition: all 0.3s ease-in-out 0s;
+	cursor: pointer;
+	outline: none;
+	position: relative;
+	padding: 10px;
+} */
+
+#btn-gcon:hover::before, #btn-gcon:focus::before {
+	opacity: 1;
+} 
+
+#btn-gcon::after {
+	content: '';
+	width: 30px; height: 30px;
+	border-radius: 100%;
+	border: 6px solid #00FFCB;
+	position: absolute;
+	z-index: -1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -52%);
+	animation: ring 1.5s infinite;
+	-o-animation: ring 1.5s infinite;
+		-ms-animation: ring 1.5s infinite;
+		-moz-animation: ring 1.5s infinite;
+		-webkit-animation: ring 1.5s infinite;
+}
+
+/* #btn-gcon:hover::after, #btn-gcon:focus::after {
+	animation: none;
+	display: none;
+}  */
+
+@keyframes ring {
+0% {
+	width: 400px;
+	height: 400px;
+	opacity: 1;
+}
+100% {
+	width: 500px;
+	height: 500px;
+	opacity: 0;
+}
+}
+
+.container #btn-gcon img{
+	width: 100%;
+	z-index: 2;
+}
+
+.container #btn-gcon img:active{
+	position: relative;
+  	top: 4px;
+  	box-shadow: none;
+}
+
+.img-footer{
+	/* display: none; */
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	transform: translate(-14%,0);
+}
+
+/*untuk tablet*/
+@media only screen and (max-width: 1024px) and (min-width: 768px){
+  	.container {
+	  	/*background-image: url('Assets/img/Artboard3.png.png');*/
+	 	background-position: center;
+	 	background-position: 10% 90%;
+	 	background-size: 10px;
+	 	width: 100%;
+	 	height: 100%;
+  	}
+
+  	.container .lg-pannel img{
+  		width: 20%;
+	  	transform: translate(10%, -287%);
+  	}
+
+  	.container .lg-right img{
+  		width: 20%;
+	  	transform: translate(10%, -327%);
+  	}
+
+  	.container #btn-gcon{
+	  	width: 24%;
+	  	transform: translate(158%, 20%);
+	  	/*margin: 18% 0 0 0;*/
+	}
+
+	.container #btn-gcon img:active{
+/*		position: relative;*/
+	  	top: 4px;
+	  	box-shadow: none;		
+	}
+
+	#btn-gcon::after {
+		animation: ring 1.5s infinite;
+		-o-animation: ring 1.5s infinite;
+		-ms-animation: ring 1.5s infinite;
+		-moz-animation: ring 1.5s infinite;
+		-webkit-animation: ring 1.5s infinite;
+	}
+
+	@keyframes ring {
+		0% {
+			width: 380px;
+			height: 380px;
+			opacity: 1;
+		}
+		100% {
+			width: 400px;
+			height: 400px;
+			opacity: 0;
+		}
+	}
+
+	.container .cicle-bg{
+		width: 50%;
+		transform: translate(50%, 28%);
+		margin: 10% 0 0 0;
+	}
+
+	.container .txt-po{
+		width: 26%;
+		transform: translate(142%, 80%);
+	}
+
+	.img-footer{
+		transform: translate(-24%, 0);
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) and (orientation : landscape){
+	.container .lg-pannel img{
+		width: 20%;
+		transform: translate(10%, -287%);
+	}
+
+	.container .lg-right img{
+		width: 20%;
+		transform: translate(10%, -327%);
+	}
+
+	.container #btn-gcon{
+		width: 24%;
+		transform: translate(158%, -18%);
+		/*margin: 18% 0 0 0;*/
+  }
+
+  .container #btn-gcon img:active{
+/*		position: relative;*/
+		top: 4px;
+		box-shadow: none;		
+  }
+
+  #btn-gcon::after {
+	  animation: ring 1.5s infinite;
+	  -o-animation: ring 1.5s infinite;
+	  -ms-animation: ring 1.5s infinite;
+	  -moz-animation: ring 1.5s infinite;
+	  -webkit-animation: ring 1.5s infinite;
+  }
+
+  @keyframes ring {
+	  0% {
+		  width: 510px;
+		  height: 510px;
+		  opacity: 1;
+	  }
+	  100% {
+		  width: 520px;
+		  height: 520px;
+		  opacity: 0;
+	  }
+  }
+
+  .container .cicle-bg{
+	  width: 50%;
+	  transform: translate(50%, 12%);
+	  margin: 10% 0 0 0;
+  }
+
+  .container .txt-po{
+	  width: 26%;
+	  transform: translate(142%, 46%);
+  }
+
+  .img-footer{
+	  transform: translate(-24%, 0);
+	  width: 100%;
+  }
+}
+
+/* untuk handphone */
+@media only screen and (max-width: 767px) and (min-width: 360px){
+	.container {
+		/*background-image: url('Assets/img/Artboard3.png');*/
+	 	background-position: 10% 90%;
+	 	background-size: 10px;
+  	}
+	.container .lg-pannel img{
+  		width: 28%;
+	  	transform: translate(10%, -287%);
+  	}
+
+  	.container .lg-right img{
+  		width: 28%;
+	  	transform: translate(10%, -327%);
+  	}
+
+  	.container #btn-gcon{
+	  	width: 40%;
+	  	transform: translate(76%, 10%);
+	  	margin: 18% 0 0 0;
+	}
+
+	.container #btn-gcon img:active{
+		position: relative;
+	  	top: 4px;
+	  	box-shadow: none;		
+	}
+
+	#btn-gcon::after {
+		transform: translate(-50%, -50%);
+		animation: ring 1.5s infinite;
+		-o-animation: ring 1.5s infinite;
+		-ms-animation: ring 1.5s infinite;
+		-moz-animation: ring 1.5s infinite;
+		-webkit-animation: ring 1.5s infinite;
+	}
+
+	@keyframes ring {
+		0% {
+			width: 330px;
+			height: 330px;
+			opacity: 1;
+		}
+		100% {
+			width: 350px;
+			height: 350px;
+			opacity: 0;
+		}
+	}
+
+	.container .cicle-bg{
+		width: 80%;
+		margin: 20% 0 0 0;	
+		transform: translate(13%, 38%);
+	}
+
+	.container .txt-po{
+		width: 38%;
+		transform: translate(84%, 116%);
+	}
+	.img-footer{
+		transform: translate(-40%, 0);
+		/*background-size: cover;*/
+		bottom: 0;
+		width: 100%;
+	}
+}
+
+/* untuk handphone landscape */
+@media screen and (max-width: 767px) and (min-width: 360px) and (orientation: landscape){
+	.container .lg-pannel img{
+		width: 18%;
+		transform: translate(10%, -168%);
+	}
+
+	.container .lg-right img{
+		width: 18%;
+		transform: translate(10%, -230%);
+	}
+
+	.container #btn-gcon{
+		width: 20%;
+		transform: translate(208%, -118%);
+		/* margin: 18% 0 0 0; */
+  }
+
+  .container #btn-gcon img:active{
+	  position: relative;
+		top: 4px;
+		box-shadow: none;		
+  }
+
+  #btn-gcon::after {
+	  transform: translate(-49.5%, -51%);
+	  animation: ring 1.5s infinite;
+	  -o-animation: ring 1.5s infinite;
+	  -ms-animation: ring 1.5s infinite;
+	  -moz-animation: ring 1.5s infinite;
+	  -webkit-animation: ring 1.5s infinite;
+  }
+
+  @keyframes ring {
+	  0% {
+		  width: 250px;
+		  height: 248px;
+		  opacity: 1;
+	  }
+	  100% {
+		  width: 274px;
+		  height: 274px;
+		  opacity: 0;
+	  }
+  }
+
+  .container .cicle-bg{
+	  width: 36%;
+	  /* margin: 20% 0 0 0;	 */
+	  transform: translate(94%, -18%);
+  }
+
+  .container .txt-po{
+	  width: 18%;
+	  transform: translate(240%, 56%);
+  }
+  .img-footer{
+	  transform: translate(-20%, 23%);
+	  /*background-size: cover;*/
+	  bottom: 0;
+	  padding: 0;
+	  margin: 0;
+	  width: 100%;
+  }
+}
+
+/*
+@media only screen and (min-width: 320px){
+	.container {
+		background-image: url('Assets/img/Artboard3.png');
+	 	background-position: 10% 90%;
+	 	background-size: 10px;
+  	}
+	.container .lg-pannel img{
+  		width: 28%;
+	  	transform: translate(10%, -287%);
+  	}
+
+  	.container .lg-right img{
+  		width: 28%;
+	  	transform: translate(10%, -327%);
+  	}
+
+  	.container #btn-gcon{
+	  	width: 40%;
+	  	transform: translate(76%, 10%);
+	  	margin: 18% 0 0 0;
+	}
+
+	.container #btn-gcon img:active{
+		position: relative;
+	  	top: 4px;
+	  	box-shadow: none;		
+	}
+
+	.container .cicle-bg{
+		width: 80%;
+		margin: 20% 0 0 0;	
+		transform: translate(13%, 38%);
+	}
+
+	.container .txt-po{
+		width: 38%;
+		transform: translate(84%, 116%);
+	}
+	.img-footer{
+		transform: translate(-40%, 0);
+		background-size: cover;
+		bottom: 0;
+		width: 100%;
+	}
+}*/

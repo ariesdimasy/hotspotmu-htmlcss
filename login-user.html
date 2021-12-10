@@ -1,0 +1,88 @@
+<html>
+
+<head>
+
+
+    <link href="https://lp-staging.devlabs.id/assets/global/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://lp-staging.devlabs.id/assets/global/usermng/style.css"> -->
+    <link href="./assets/global/style.css" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login </title>
+</head>
+
+<body>
+    <div class="container" style="height: 100%;">
+        <div style="position: fixed;top:15%;cursor: pointer;display: none;" id="backButton">
+            <img src="https://lp-staging.devlabs.id/assets/global/back.png" class="img-fluid" alt="...">
+        </div>
+        <div class="row grid-row" id="top-rowz">
+            <div class="col-md-4 col-sm-4 col-xs-2" id="top-col">
+                <img id="logo-bakti-online" src="https://lp-staging.devlabs.id/assets/global/logo.png"
+                    style="float:left" />
+            </div>
+
+            <div id="top-alert" class="cold-md-4 col-sm-4">
+                <div class="alert alert-danger" style="text-align: center; font-size: 14px; font-weight:100px;">
+                    JANGAN TUTUP HALAMAN INI
+                </div>
+            </div>
+            <!-- Hubungi Kami -->
+            <div id="box-hubungi-kami" class="cold-md-4 col-sm-4">
+                <a id="hubungiKami" style="float: right; padding-right: 10px;" href="hubungi-kami.html">
+                    <u>
+                        Hubungi Kami
+                    </u>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="row align-items-center" style="height: 80%" id="roleUser">
+            <div class="col col-lg-4 col-md-6 col-sm-12 col-12  mx-auto">
+                <div class="card ">
+                    <div class="card-body">
+                        <form id="log2" action="$(link-login-only)" method="post">
+                            <div class="row justify-content-center">
+                                <div class="background-image text-center">
+                                    <img src="https://lp-staging.devlabs.id/assets/global/usermng/User.png"
+                                        class="card-img-top" alt="...">
+
+                                </div>
+                                <p class="card-text h3 text-center">User Login</p>
+                            </div>
+                            <div class="form-group">
+                                <label class="">Username</label>
+                                <div class="">
+                                    <input type="text" class="form-control" name="username">
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+                                <label for="" class="">Password</label>
+                                <div class="">
+                                    <input type="password" class="form-control" name="password">
+                                </div>
+
+                            </div>
+
+                            <div class="justify-content-center text-center text-lg-center">
+                                <button type="submit" class="btn btn-primary col-md-12">Login</button>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>
