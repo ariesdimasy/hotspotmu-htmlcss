@@ -6,7 +6,7 @@
     <link href="./assets/global/style.css" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Role </title>
+    <title>Index </title>
 </head>
 
 <body>
@@ -35,6 +35,116 @@
 
             </div>
         </div>
+        <div class="row grid-row">
+            <div class="col-sm-12 col-md-8 col-xs-8 mx-auto">
+                <!-- Tulisan Selamat Datang -->
+                <!-- NEW VERSION -->
+                <div class="row my-1">
+                    <!-- <div class="col-sm-12 col-md-10 col-xs-12"> -->
+                    <h1 id='textSelamat'>Selamat Datang,</h1>
+                    <!-- </div> -->
+                </div>
+                <!-- Tulisan Body -->
+                <div class="row mb-3">
+                    <div id="textInfo">
+                        Silahkan mengisi Survey terlebih dahulu untuk mendapatkan
+                        akses internet, dan pilih konten dibawah untuk mendapatkan
+                        informasi terkini.
+                    </div>
+                </div>
+
+                <div id="desktop-connect-internet" class="row grid-row ">
+                    <div class="col-sm-12 col-md-10 col-xs-12">
+                        <div>
+                            <h6 id="textCountdown">Anda akan terhubung ke internet setelah 45 detik, atau selesaikan
+                                survey dan klik tombol hubungkan ke internet</h>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary" id='hubungButton' onclick="konekInternet()" disabled='true'
+                                type="button">Hubungkan ke
+                                Internet</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- button Content -->
+                <div class="row">
+                    <div class="col-md-10 col-sm-12 col-xs-12">
+                        <!-- button Video -->
+                        <a id="videoButton" onClick="reply_click(this.id)" class="button" data-bs-toggle="modal"
+                            data-bs-target="#modalVideo">
+                            <div class="center">
+                                <div class="row">
+                                    <div class="col-2 col-sm-2 col-md-2 col-lg-1">
+                                        <img src="https://lp-staging.devlabs.id/assets/global/video.svg" />
+                                    </div>
+                                    <div class="col-10 col-sm-10 col-md-10 col-lg-11">
+                                        <div class="btnText">
+                                            Video
+                                            <span id="judulVideo" title="" style="font-size: 10px;">Judul
+                                                Video</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- button Banner -->
+                <div class="row my-2">
+                    <div class="col-md-10 col-sm-12 col-xs-12">
+                        <a id="bannerButton" onClick="reply_click(this.id)" class="button" data-bs-toggle="modal"
+                            data-bs-target="#modalBanner">
+                            <div class="center">
+                                <div class="row">
+                                    <div class="col-2 col-xs-2 col-sm-2 col-md-2 col-lg-1">
+                                        <img src="https://lp-staging.devlabs.id/assets/global/banner.svg" />
+                                    </div>
+                                    <div class="col-10 col-xs-10 col-sm-10 col-md-10 col-lg-11">
+                                        <div class="btnText">
+                                            Banner
+                                            <span id="judulBanner" title="" style="font-size: 10px;">Judul
+                                                Banner</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- button News -->
+                <div class="row">
+                    <div class="col-md-10 col-sm-12 col-xs-12">
+                        <a id="beritaButton" onClick="reply_click(this.id)" class="button" data-bs-toggle="modal"
+                            data-bs-target="#modalBerita">
+                            <div class="center">
+                                <div class="row">
+                                    <div class="col-2 col-xs-1 col-sm-2 col-md-2 col-lg-1">
+                                        <img src="https://lp-staging.devlabs.id/assets/global/berita.svg" />
+                                    </div>
+                                    <div class="col-10 col-xs-10 col-sm-10 col-md-10 col-lg-11">
+                                        <div class="btnText">
+                                            Berita
+                                            <span id="judulBerita" title="" style="font-size: 10px;">Judul
+                                                Berita</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="row footer">
+            <div style="text-align: left;">Copyright &copy; 2021 All Rights Reserved</div>
+        </div>
+
 
     </div>
 </body>
