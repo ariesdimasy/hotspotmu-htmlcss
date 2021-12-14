@@ -16,8 +16,16 @@
         </div>
         <div class="row grid-row" id="top-rowz">
             <div class="col-md-4 col-sm-4 col-xs-2" id="top-col">
-                <img id="logo-bakti-online" src="https://lp-staging.devlabs.id/assets/global/logo.png"
-                    style="float:left" />
+                <a href="index.html">
+                    <img id="logo-bakti-online" src="https://lp-staging.devlabs.id/assets/global/logo.png"
+                        style="float:left" />
+                </a>
+                <a id="hubungi-kami-mobile" style="float: right; width: 30%; text-align: right;"
+                    href="hubungi-kami.html">
+                    <u style="text-align: right;">
+                        Hubungi Kami
+                    </u>
+                </a>
             </div>
 
             <div id="top-alert" class="cold-md-4 col-sm-4">
@@ -52,98 +60,34 @@
                         informasi terkini.
                     </div>
                 </div>
+                <form id="logininternet" name="linkLogin"
+                    action="https://icms-auth.baktikominfo.id/authentikasi/auth.php" method="POST">
+                    <input id="macInput" type="hidden" name="mac" value="$(mac)" />
+                    <input id="ipInput" type="hidden" name="ip" value="$(mac)" />
+                    <input id="userInput" type="hidden" name="username" />
+                    <input id="linkLoginInput" type="hidden" name="link-login" value="$(link-login)" />
+                    <input id="linkOrigInput" type="hidden" name="link-orig" value="$(link-orig)" />
+                    <input id="linkLoginOnlyInput" type="hidden" name="link-login-only" value="$(link-login-only)" />
+                    <input id="passwordInput" type="hidden" name="password" />
+                    <div id="" class="row grid-row mx-auto text-center ">
 
-                <div id="desktop-connect-internet" class="row grid-row ">
-                    <div class="col-sm-12 col-md-10 col-xs-12">
-                        <div>
-                            <h6 id="textCountdown">Anda akan terhubung ke internet setelah 45 detik, atau selesaikan
-                                survey dan klik tombol hubungkan ke internet</h>
-                        </div>
-                        <div>
-                            <button class="btn btn-primary" id='hubungButton' onclick="konekInternet()" disabled='true'
-                                type="button">Hubungkan ke
+
+                        <div id="desktop-connect-internet">
+                            <button class="btn btn-primary" id='hubungButton' type="submit">Hubungkan ke
                                 Internet</button>
                         </div>
+
                     </div>
-                </div>
-
-                <!-- button Content -->
-                <div class="row">
-                    <div class="col-md-10 col-sm-12 col-xs-12">
-                        <!-- button Video -->
-                        <a id="videoButton" onClick="reply_click(this.id)" class="button" data-bs-toggle="modal"
-                            data-bs-target="#modalVideo">
-                            <div class="center">
-                                <div class="row">
-                                    <div class="col-2 col-sm-2 col-md-2 col-lg-1">
-                                        <img src="https://lp-staging.devlabs.id/assets/global/video.svg" />
-                                    </div>
-                                    <div class="col-10 col-sm-10 col-md-10 col-lg-11">
-                                        <div class="btnText">
-                                            Video
-                                            <span id="judulVideo" title="" style="font-size: 10px;">Judul
-                                                Video</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- button Banner -->
-                <div class="row my-2">
-                    <div class="col-md-10 col-sm-12 col-xs-12">
-                        <a id="bannerButton" onClick="reply_click(this.id)" class="button" data-bs-toggle="modal"
-                            data-bs-target="#modalBanner">
-                            <div class="center">
-                                <div class="row">
-                                    <div class="col-2 col-xs-2 col-sm-2 col-md-2 col-lg-1">
-                                        <img src="https://lp-staging.devlabs.id/assets/global/banner.svg" />
-                                    </div>
-                                    <div class="col-10 col-xs-10 col-sm-10 col-md-10 col-lg-11">
-                                        <div class="btnText">
-                                            Banner
-                                            <span id="judulBanner" title="" style="font-size: 10px;">Judul
-                                                Banner</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- button News -->
-                <div class="row">
-                    <div class="col-md-10 col-sm-12 col-xs-12">
-                        <a id="beritaButton" onClick="reply_click(this.id)" class="button" data-bs-toggle="modal"
-                            data-bs-target="#modalBerita">
-                            <div class="center">
-                                <div class="row">
-                                    <div class="col-2 col-xs-1 col-sm-2 col-md-2 col-lg-1">
-                                        <img src="https://lp-staging.devlabs.id/assets/global/berita.svg" />
-                                    </div>
-                                    <div class="col-10 col-xs-10 col-sm-10 col-md-10 col-lg-11">
-                                        <div class="btnText">
-                                            Berita
-                                            <span id="judulBerita" title="" style="font-size: 10px;">Judul
-                                                Berita</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-
+                </form>
+                <input type="hidden" id="mac" value="$(mac)">
+                <input type="hidden" id="ipLocal" value="$(ip)">
             </div>
 
         </div>
         <div class="row footer">
             <div style="text-align: left;">Copyright &copy; 2021 All Rights Reserved</div>
         </div>
+
 
 
     </div>

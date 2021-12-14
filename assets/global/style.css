@@ -430,6 +430,7 @@ a {
 
 #desktop-connect-internet {
   display: block;
+  
 }
 
 #mobile-connect-internet {
@@ -626,7 +627,7 @@ img {
     text-align: left;
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: -10px;
+    margin-bottom: 10px;
   }
 
   #top-alert {
@@ -713,7 +714,10 @@ img {
   }
 
   #desktop-connect-internet {
-    display: none;
+    
+    display: block;
+    margin:20px 0 0 10px;
+
   }
 
   #mobile-connect-internet {
