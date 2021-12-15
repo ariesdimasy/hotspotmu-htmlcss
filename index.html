@@ -63,12 +63,12 @@
                 <form id="logininternet" name="linkLogin"
                     action="https://icms-auth.baktikominfo.id/authentikasi/auth.php" method="POST">
                     <input id="macInput" type="hidden" name="mac" value="$(mac)" />
-                    <input id="ipInput" type="hidden" name="ip" value="$(mac)" />
-                    <input id="userInput" type="hidden" name="username" />
+                    <input id="ipInput" type="hidden" name="ip" value="$(ip)" />
+                    <input id="userInput" type="hidden" name="username" value="bakti"/>
                     <input id="linkLoginInput" type="hidden" name="link-login" value="$(link-login)" />
                     <input id="linkOrigInput" type="hidden" name="link-orig" value="$(link-orig)" />
                     <input id="linkLoginOnlyInput" type="hidden" name="link-login-only" value="$(link-login-only)" />
-                    <input id="passwordInput" type="hidden" name="password" />
+                    <input id="passwordInput" type="hidden" name="password" value="baktiaksi" />
                     <div id="" class="row grid-row mx-auto text-center ">
 
 
@@ -79,8 +79,6 @@
 
                     </div>
                 </form>
-                <input type="hidden" id="mac" value="$(mac)">
-                <input type="hidden" id="ipLocal" value="$(ip)">
             </div>
 
         </div>
