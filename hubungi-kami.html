@@ -62,7 +62,10 @@
                             ticket
                             berhasil di kirim</div>
 
-                        <form>
+                        <form action="https://api-staging.devlabs.id/ticketing" method="post">
+
+                            <input type="hidden" name="lite" value="">
+
                             <div class="form-group">
                                 <label class="form-label"> Nama Anda </label>
                                 <input class="form-control" placeholder="Ketik Disini" id="nama" name="nama">
@@ -102,6 +105,9 @@
 
                             <div style="display: flex; align-items: center; justify-content: center; margin-top:10px">
                                 <button id="submitHubungi">Kirim</button>
+                                <a href="login.html" style="margin-left: 10px;"> <button class="bg-secondary"
+                                        type="button"> Batal
+                                    </button> </a>
                             </div>
 
                         </form>
@@ -109,6 +115,10 @@
                 </div>
             </div>
 
+        </div>
+
+        <div class="row footer">
+            <div style="text-align: left;">Copyright &copy; 2021 All Rights Reserved</div>
         </div>
 
     </div>
