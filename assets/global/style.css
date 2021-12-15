@@ -68,6 +68,8 @@ h1#textSelamat {
 
 #textInfo {
   color: #3a3a3a;
+  text-align: center;
+  vertical-align: middle;
 }
 
 #textCountdown,
@@ -647,8 +649,9 @@ img {
 
   #textInfo {
     font-size: 11px;
-
+    text-align: center;
     margin-bottom: 0px;
+    vertical-align: middle;
   }
 
   #backButton { 
