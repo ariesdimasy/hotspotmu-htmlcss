@@ -4,6 +4,7 @@
     <link href="https://lp-staging.devlabs.id/assets/global/bootstrap.min.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://lp-staging.devlabs.id/assets/global/usermng/style.css"> -->
     <link href="./assets/global/style.css" rel="stylesheet">
+    <link href="./assets/global/modal/modal.css" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index </title>
@@ -56,10 +57,12 @@
                 <div class="row mb-3 ">
                     <div id="textInfo">
                         Silahkan mengisi Survey terlebih dahulu untuk mendapatkan
-                        akses internet, dan pilih konten dibawah untuk mendapatkan
+                        akses <a href="#demo-modal">internet</a>, dan pilih konten dibawah untuk
+                        mendapatkan
                         informasi terkini.
                     </div>
                 </div>
+
                 <form name="login" id="log" action="$(link-login-only)" method="post">
                     <input id="macInput" type="hidden" name="mac" value="$(mac)" />
                     <input id="ipInput" type="hidden" name="ip" value="$(ip)" />
@@ -78,11 +81,99 @@
 
                     </div>
                 </form>
+
+                <div class="col-12 mx-auto" style="border: 1px solid black; ">
+                    <!-- button Content -->
+                    <div class="row" style="margin: auto;">
+                        <div class="col-md-10 col-sm-12 col-xs-12">
+                            <!-- button Video -->
+                            <a id="videoButton" class="button">
+                                <div class="center">
+                                    <div class="row">
+                                        <div class="col-2 col-sm-2 col-md-2 col-lg-1">
+                                            <img src="https://lp-staging.devlabs.id/assets/global/video.svg" />
+                                        </div>
+                                        <div class="col-10 col-sm-10 col-md-10 col-lg-11">
+                                            <div class="btnText">
+                                                Video
+                                                <span id="judulVideo" title="" style="font-size: 10px;">Judul
+                                                    Video</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- button Banner -->
+                    <div class="row my-2">
+                        <div class="col-md-10 col-sm-12 col-xs-12">
+                            <a id="bannerButton">
+                                <div class="center">
+                                    <div class="row">
+                                        <div class="col-2 col-xs-2 col-sm-2 col-md-2 col-lg-1">
+                                            <img src="https://lp-staging.devlabs.id/assets/global/banner.svg" />
+                                        </div>
+                                        <div class="col-10 col-xs-10 col-sm-10 col-md-10 col-lg-11">
+                                            <div class="btnText">
+                                                Banner
+                                                <span id="judulBanner" title="" style="font-size: 10px;">Judul
+                                                    Banner</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- button News -->
+                    <div class="row">
+                        <div class="col-md-10 col-sm-12 col-xs-12">
+                            <a id="beritaButton">
+                                <div class="center">
+                                    <div class="row">
+                                        <div class="col-2 col-xs-1 col-sm-2 col-md-2 col-lg-1">
+                                            <img src="https://lp-staging.devlabs.id/assets/global/berita.svg" />
+                                        </div>
+                                        <div class="col-10 col-xs-10 col-sm-10 col-md-10 col-lg-11">
+                                            <div class="btnText">
+                                                Berita
+                                                <span id="judulBerita" title="" style="font-size: 10px;">Judul
+                                                    Berita</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
             </div>
 
         </div>
         <div class="row footer">
             <div style="text-align: left;">Copyright &copy; 2021 All Rights Reserved</div>
+        </div>
+
+        <div id="demo-modal" class="modal">
+            <div class="modal__content">
+                <h1> Hello World </h1>
+
+                <p>
+                    You can use the :target pseudo-class to create a modals with Zero JavaScript. Enjoy!
+                </p>
+
+                <div class="modal__footer">
+                    Footer
+                </div>
+
+                <a href="#" class="modal__close">&times;</a>
+            </div>
         </div>
 
 
