@@ -57,7 +57,7 @@
                 <div class="row mb-3 ">
                     <div id="textInfo">
                         Silahkan mengisi Survey terlebih dahulu untuk mendapatkan
-                        akses <a href="#demo-modal">internet</a>, dan pilih konten dibawah untuk
+                        akses internet, dan pilih konten dibawah untuk
                         mendapatkan
                         informasi terkini.
                     </div>
@@ -82,12 +82,12 @@
                     </div>
                 </form>
 
-                <div class="col-12 mx-auto" style="border: 1px solid black; ">
+                <div>
                     <!-- button Content -->
-                    <div class="row" style="margin: auto;">
-                        <div class="col-md-10 col-sm-12 col-xs-12">
+                    <div class="row" style="margin-bottom: 10;">
+                        <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12 mx-auto">
                             <!-- button Video -->
-                            <a id="videoButton" class="button">
+                            <a id="videoButton" href="#video-modal" class="button">
                                 <div class="center">
                                     <div class="row">
                                         <div class="col-2 col-sm-2 col-md-2 col-lg-1">
@@ -96,8 +96,7 @@
                                         <div class="col-10 col-sm-10 col-md-10 col-lg-11">
                                             <div class="btnText">
                                                 Video
-                                                <span id="judulVideo" title="" style="font-size: 10px;">Judul
-                                                    Video</span>
+
                                             </div>
                                         </div>
                                     </div>
@@ -107,9 +106,9 @@
                     </div>
 
                     <!-- button Banner -->
-                    <div class="row my-2">
-                        <div class="col-md-10 col-sm-12 col-xs-12">
-                            <a id="bannerButton">
+                    <div class="row" style="margin-bottom: 10;">
+                        <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12 mx-auto">
+                            <a id="bannerButton" href="#banner-modal">
                                 <div class="center">
                                     <div class="row">
                                         <div class="col-2 col-xs-2 col-sm-2 col-md-2 col-lg-1">
@@ -118,8 +117,7 @@
                                         <div class="col-10 col-xs-10 col-sm-10 col-md-10 col-lg-11">
                                             <div class="btnText">
                                                 Banner
-                                                <span id="judulBanner" title="" style="font-size: 10px;">Judul
-                                                    Banner</span>
+
                                             </div>
                                         </div>
                                     </div>
@@ -129,9 +127,9 @@
                     </div>
 
                     <!-- button News -->
-                    <div class="row">
-                        <div class="col-md-10 col-sm-12 col-xs-12">
-                            <a id="beritaButton">
+                    <div class="row" style="margin-bottom: 10;">
+                        <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12 mx-auto">
+                            <a id="beritaButton" href="#news-modal">
                                 <div class="center">
                                     <div class="row">
                                         <div class="col-2 col-xs-1 col-sm-2 col-md-2 col-lg-1">
@@ -140,8 +138,7 @@
                                         <div class="col-10 col-xs-10 col-sm-10 col-md-10 col-lg-11">
                                             <div class="btnText">
                                                 Berita
-                                                <span id="judulBerita" title="" style="font-size: 10px;">Judul
-                                                    Berita</span>
+
                                             </div>
                                         </div>
                                     </div>
@@ -160,16 +157,79 @@
             <div style="text-align: left;">Copyright &copy; 2021 All Rights Reserved</div>
         </div>
 
-        <div id="demo-modal" class="modal">
-            <div class="modal__content">
-                <h1> Hello World </h1>
+        <div id="welcome-modal" class="welcome-modal">
+            <div class="welcome__modal__content">
+                <h1> Selamat Datang </h1>
 
                 <p>
-                    You can use the :target pseudo-class to create a modals with Zero JavaScript. Enjoy!
+                    Terima kasih telah menggunakan layanan internet Bakti!
+                </p>
+
+                <div class="welcome__modal__footer">
+                    <a href="#" class="modal__close__button__welcome" id="close"> tolong close </a>
+
+                    <form action="" onsubmit="document.getElementById('close').click() ; return false">
+                        <button type="submit" class="btn btn-primary text-white ">
+                            Lanjutkan
+                        </button>
+
+                    </form>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <div id="video-modal" class="modal col-lg-5 col-md-5 col-sm-12 col-xs-12">
+            <div class="modal__content">
+                <h1> Video </h1>
+
+                <div style="text-align: center;  height: 288px;">
+                    <video src="https://lp-staging.devlabs.id/video" controls
+                        style="width: 256px; height: 144px; line-height:144px;">
+                </div>
+
+                <div class="modal__footer">
+                    <a href="#" class="btn btn-danger modal__close__button text-white">
+                        Close
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div id="banner-modal" class="modal col-lg-5 col-md-5 col-sm-12 col-xs-12">
+            <div class="modal__content">
+                <h1> Banner </h1>
+
+                <p style="text-align: center;">
+                    <img src="https://lp-staging.devlabs.id/image" class="img-fluid">
                 </p>
 
                 <div class="modal__footer">
-                    Footer
+                    <a href="#" class="btn btn-danger modal__close__button text-white">
+                        Close
+                    </a>
+                </div>
+
+                <a href="#" class="modal__close">&times;</a>
+            </div>
+        </div>
+
+        <div id="news-modal" class="modal col-lg-5 col-md-5 col-sm-12 col-xs-12">
+            <div class="modal__content">
+                <h1> News </h1>
+
+                <p style="text-align: center;">
+                    <iframe src=""></iframe>
+                </p>
+
+                <div class="modal__footer">
+                    <a href="#" class="btn btn-danger modal__close__button text-white">
+                        Close
+                    </a>
                 </div>
 
                 <a href="#" class="modal__close">&times;</a>
